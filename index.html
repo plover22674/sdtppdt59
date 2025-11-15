@@ -1,18 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <title>Mon site GitHub Pages</title>
-    <style>
-        body {
-            font-family: Arial;
-            text-align: center;
-            padding-top: 60px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>Mon Premier Site Interactif</title>
 </head>
 <body>
-    <h1>Bienvenue sur mon site !</h1>
-    <p>Ce site est hébergé gratuitement grâce à GitHub Pages.</p>
+
+    <h1>Écrivez votre message !</h1>
+
+    <form action="/traitement-du-formulaire" method="POST"> 
+        
+        <p>
+            <label for="prenom">Votre prénom :</label><br>
+            <input type="text" id="prenom" name="prenom_user" required>
+        </p>
+
+        <p>
+            <label for="commentaire">Laissez votre commentaire :</label><br>
+            <textarea id="commentaire" name="commentaire_user" rows="6" cols="40"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Soumettre">
+        </p>
+
+    </form>
+
 </body>
 </html>
